@@ -1,8 +1,6 @@
 package vue.demo.controller;
 
-//import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-//import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 import java.util.HashMap;
@@ -20,7 +18,6 @@ public class TestController {
     
     
     @GetMapping("/products")
-//    @CrossOrigin(origins = "http://localhost:5173", methods = {RequestMethod.GET})
     public String getProducts() {
         Map<String, String> response = new HashMap<>(); 
         response.put("message", "Hello from Spring Boot!");
@@ -29,7 +26,6 @@ public class TestController {
     }
     
     @GetMapping("/prjid")
-//    @CrossOrigin(origins = "http://localhost:5173", methods = {RequestMethod.GET})
     public String getPrjid() {
         Map<String, String> response = new HashMap<>(); 
         response.put("message", "Hello from Spring Boot!");
