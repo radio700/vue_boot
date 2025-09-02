@@ -19,6 +19,11 @@
     <p v-if="isVisible">{{ isVisible }}</p>
     <button @click="changeState">chage</button>
   </div>
+  <div>
+    <ul>
+      <li v-for="(item, index) in items" :key="index">{{ item }}</li>
+    </ul>
+  </div>
 </template>
 
 <script setup>
@@ -27,6 +32,8 @@ import { ref } from 'vue'
 
 const counter = useCounterStores()
 const asdf = getQwer()
+
+const items = ref(['사과', '바나나'])
 
 const message = ref('')
 
