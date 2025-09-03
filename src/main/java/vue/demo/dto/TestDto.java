@@ -11,14 +11,4 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class TestDto {
 	private String color;
-	
-	public TestDto () {}
-	
-	public String getColor() {
-		return this.color;
-	}
-	
-	public void setColor(String color) {
-		this.color = color;
-	}
 }
