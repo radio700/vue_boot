@@ -11,16 +11,7 @@ import NavBar from './components/common/NavBar.vue'
     <NavBar />
 
     <!-- 메인 컨텐츠 영역 -->
-    <main class="main-content">
-      <router-view />
-    </main>
-
-    <!-- 푸터 (선택사항) -->
-    <footer class="footer">
-      <div class="footer-content">
-        <p>&copy; 2024 MyApp. All rights reserved.</p>
-      </div>
-    </footer>
+    <main class="main-content"><router-view />10</main>
   </div>
 </template>
 
