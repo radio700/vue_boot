@@ -95,7 +95,7 @@ public class TestController {
     		return ResponseEntity.badRequest().body(Map.of("message","검색중오류")+e.getMessage());
     	}
     }
-     
+       
     
 //    @GetMapping("/getProducts")
 //    public String getProducts() {
