@@ -32,21 +32,10 @@ public class TestController {
         response.put("message", "Hello from Spring Boot!");
         return response;
     }
-    
-//    @PostMapping("path")
-//    public String postMethodName(@RequestBody String entity) {
-//        //TODO: process POST request
-//        
-//        return entity;
-//    }
-
-
-    @PostMapping(value = "/postProducts", consumes = "application/json")
-    public ResponseEntity<?> postProducts (@RequestBody TestDto searchMap) throws Exception{
-        System.out.println("dasf");
+    @PostMapping(value = "/postProducts")
+    public ResponseEntity<?> postProducts (@RequestBody TestDto testDto) throws Exception{
     	try {
-    		System.out.println((searchMap.getColor()));
-        	return ResponseEntity.ok(searchMap.getColor());
+        	return ResponseEntity.ok(service.postProduct(testDto));
     	} catch(Exception e) {
     		System.out.println("에러"+e.getMessage());
     		return ResponseEntity.badRequest().body(Map.of("message","검색중오류")+e.getMessage());

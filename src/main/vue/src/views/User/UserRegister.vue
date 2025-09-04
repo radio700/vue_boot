@@ -12,7 +12,12 @@ import { reactive, ref } from 'vue'
 
 const result = ref("")
 
-const obj = {color : "red"}
+const obj = {
+  color : "red",
+  wheel : "4"
+}
+
+
 
 function postExample() {
   axios.post('/api/postProducts', obj)
