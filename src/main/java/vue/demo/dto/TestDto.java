@@ -11,4 +11,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class TestDto {
 	private String color;
+    private String wheel;
 }
