@@ -5,12 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TestDto {
-	private String color;
-    private String wheel;
-    private selCodeDto selCode; // 중첩 객체
+@Builder
+public class selCodeDto {
+    private String code;
+    private String name;
 }

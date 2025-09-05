@@ -14,7 +14,11 @@ const result = ref("")
 
 const obj = {
   color : "red",
-  wheel : "4"
+  wheel : "4",
+  selCode : {
+    code : "1",
+    name : "test"
+  }
 }
 
 
@@ -22,6 +26,7 @@ const obj = {
 function postExample() {
   axios.post('/api/postProducts', obj)
   .then((res) => {
+    result.value = res.data
     console.log('🚀 ~ res.data:', res.data)
     })
     .catch((res) => {

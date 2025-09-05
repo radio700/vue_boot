@@ -10,6 +10,7 @@ public class TestService {
 
 	public Object postProduct(TestDto testDto) {
         System.out.println("service~~");
+        System.out.println("testDto = " + testDto);
 		return testDto;
 	}
 }
