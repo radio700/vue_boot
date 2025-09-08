@@ -8,6 +8,8 @@ import NavBar from './components/common/NavBar.vue'
 <template>
   <div id="app">
     <!-- 네비게이션 바 -->
+
+<!--    <NavBar v-if="isAuthenticated"/>-->
     <NavBar />
 
     <!-- 메인 컨텐츠 영역 -->

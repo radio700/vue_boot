@@ -24,7 +24,7 @@ public class TestController {
 	
 	@Autowired
 	TestService service;
-	
+//	sdfasf
     @GetMapping("/test")
     public Map<String, String> testConnection() {
     	System.out.println("@@@@@@@@@@@@@test@@@@@@@@@@@@@@@@@@@");
@@ -60,11 +60,11 @@ public class TestController {
     	return "List of productsqwer";
     }
     
-    @PostMapping("/login")
-    public String test(@RequestBody LoginDTO loginDTO) {
-        System.out.println("id = " + loginDTO.getId());
-        System.out.println("password = " + loginDTO.getPassword());
-        return "Hello World";
-    }
+//    @PostMapping("/login")
+//    public String test(@RequestBody LoginDTO loginDTO) {
+//        System.out.println("id = " + loginDTO.getUsername());
+//        System.out.println("password = " + loginDTO.getPassword());
+//        return "Hello World";
+//    }
     
 }

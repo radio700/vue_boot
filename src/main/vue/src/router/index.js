@@ -34,12 +34,11 @@ const router = createRouter({
       name: "login",
       component: LoginView,
     },
-
-    // {
-    //   path: '/products',
-    //   name: 'products',
-    //   component: TestComponent,
-    // },
+    {
+      path: '/products',
+      name: 'products',
+      component: LoginView,
+    },
     // {
     //   path: '/home',
     //   name: 'home',
