@@ -21,8 +21,6 @@ const obj = {
   }
 }
 
-
-
 function postExample() {
   axios.post('/api/postProducts', obj)
   .then((res) => {
