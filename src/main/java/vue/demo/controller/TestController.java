@@ -57,9 +57,9 @@ public class TestController {
         Map<String, String> response = new HashMap<>(); 
         response.put("message", "Hello from Spring Boot!");
         System.out.println("@@@@@@@@@prjid@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-    	return "List of productsqwer";
+    	return "List of productsqasdfasdtygfsddasdfwer";
     }
-    
+
 //    @PostMapping("/login")
 //    public String test(@RequestBody LoginDTO loginDTO) {
 //        System.out.println("id = " + loginDTO.getUsername());
